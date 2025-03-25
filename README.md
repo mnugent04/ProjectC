@@ -53,3 +53,8 @@ Labeling the data directly with consistant color. (pgs 96-98)
   
 3. The Impact of Unpredictable Gas Prices on Household Budgets
    * How fluctuating gas prices can significantly affect monthly budgets and financial stability for California households.
+
+## Extra Credit
+In class, I was given feedback about my graphs for gas and housing. I had not realized the points had been plotted incorrectly making the 
+data visualization confusing and ugly. I fixed this problem by making sure the data was plotted monthly, instead of 12 points being plotted on 
+the same year. This made my graphs look much smoother and made them more visually appealing. 
