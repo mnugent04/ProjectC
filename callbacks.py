@@ -22,12 +22,12 @@ def register_callbacks(app):
                 data=go.Scatter(x=filtered_df['Year_only'], y=filtered_df['Income'], mode='lines', name='Income'))
         elif data_type == 'housing':
             filtered_df = df_housing[(df_housing['Year_only'] >= start_year) & (df_housing['Year_only'] <= end_year)]
-            fig = go.Figure(data=go.Scatter(x=filtered_df['Year_only'], y=filtered_df['Housing_Price'], mode='lines',
+            fig = go.Figure(data=go.Scatter(x=filtered_df['Date'], y=filtered_df['Housing_Price'], mode='lines',
                                             name='Housing Prices'))
         elif data_type == 'gas':
             filtered_df = df_gas[(df_gas['Year_only'] >= start_year) & (df_gas['Year_only'] <= end_year)]
             fig = go.Figure(
-                data=go.Scatter(x=filtered_df['Year_only'], y=filtered_df['Gas_Price'], mode='lines', name='Gas Prices'))
+                data=go.Scatter(x=filtered_df['Date'], y=filtered_df['Gas_Price'], mode='lines', name='Gas Prices'))
         elif data_type == 'wage':
             filtered_df = df_wage[(df_wage['Year_only'] >= start_year) & (df_wage['Year_only'] <= end_year)]
             fig = go.Figure(
